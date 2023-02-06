@@ -1,6 +1,6 @@
 const fs = require('fs')
 const { join } = require('path')
-const basic = require('@antfu/eslint-config-basic')
+const basic = require('@fazulk/eslint-config-basic')
 
 const tsconfig = process.env.ESLINT_TSCONFIG || 'tsconfig.eslint.json'
 
