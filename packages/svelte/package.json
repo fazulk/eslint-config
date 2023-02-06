@@ -15,8 +15,8 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@antfu/eslint-config-basic": "workspace:*",
-    "@antfu/eslint-config-ts": "workspace:*",
+    "@fazulk/eslint-config-basic": "workspace:*",
+    "@fazulk/eslint-config-ts": "workspace:*",
     "eslint-plugin-svelte": "^2.16.0",
     "local-pkg": "^0.4.3"
   },

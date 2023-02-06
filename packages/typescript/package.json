@@ -1,5 +1,5 @@
 {
-  "name": "@antfu/eslint-config-ts",
+  "name": "@fazulk/eslint-config-ts",
   "version": "0.35.9",
   "description": "",
   "author": "Anthony Fu <anthonyfu117@hotmail.com> (https://github.com/antfu/)",
@@ -17,7 +17,7 @@
     "typescript": ">=3.9"
   },
   "dependencies": {
-    "@antfu/eslint-config-basic": "workspace:*",
+    "@fazulk/eslint-config-basic": "workspace:*",
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "@typescript-eslint/parser": "^5.49.0",
     "eslint-plugin-jest": "^27.2.1"
