@@ -29,7 +29,14 @@ module.exports = {
       : '@fazulk/eslint-config-basic',
   ],
   rules: {
-    'vue/max-attributes-per-line': 'off',
+    'vue/max-attributes-per-line': ['error', {
+      singleline: {
+        max: 6,
+      },
+      multiline: {
+        max: 1,
+      },
+    }],
     'vue/no-v-html': 'off',
     'vue/require-prop-types': 'off',
     'vue/require-default-prop': 'off',
