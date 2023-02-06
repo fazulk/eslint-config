@@ -15,8 +15,8 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@antfu/eslint-config-basic": "workspace:*",
-    "@antfu/eslint-config-ts": "workspace:*",
+    "@fazulk/eslint-config-basic": "workspace:*",
+    "@fazulk/eslint-config-ts": "workspace:*",
     "eslint-plugin-vue": "^9.9.0",
     "local-pkg": "^0.4.3"
   },
