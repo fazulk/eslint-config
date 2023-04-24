@@ -24,9 +24,7 @@ module.exports = {
   ],
   extends: [
     'plugin:svelte/recommended',
-    TS
-      ? '@fazulk/eslint-config-ts'
-      : '@fazulk/eslint-config-basic',
+    '@antfu'
   ],
   rules: {
     'svelte/indent': [

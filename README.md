@@ -1,9 +1,9 @@
-# @antfu/eslint-config
+# @fazulk/eslint-config
 
-[![npm](https://img.shields.io/npm/v/@antfu/eslint-config?color=a1b858&label=)](https://npmjs.com/package/@antfu/eslint-config)
+[![npm](https://img.shields.io/npm/v/@fazulk/eslint-config?color=a1b858&label=)](https://npmjs.com/package/@fazulk/eslint-config)
 
 - Single quotes, no semi
-- Auto fix for formatting (aimed to be used standalone without Prettier)
+- Auto fix for formatting (aimed to be used standalone **without** Prettier)
 - Designed to work with TypeScript, Vue out-of-box
 - Lint also for json, yaml, markdown
 - Sorted imports, dangling commas
@@ -15,14 +15,14 @@
 ### Install
 
 ```bash
-pnpm add -D eslint @antfu/eslint-config
+pnpm add -D eslint @fazulk/eslint-config
 ```
 
 ### Config `.eslintrc`
 
 ```json
 {
-  "extends": "@antfu"
+  "extends": "@fazulk"
 }
 ```
 
@@ -64,21 +64,65 @@ Type aware rules are enabled when a `tsconfig.eslint.json` is found in the proje
 process.env.ESLINT_TSCONFIG = 'tsconfig.json'
 
 module.exports = {
-  extends: '@antfu'
+  extends: '@fazulk'
 }
 ```
 
-## Extended Reading
+### Lint Staged
 
-Learn more about the context - [Why I don't use Prettier](https://antfu.me/posts/why-not-prettier).
+If you want to apply lint and auto-fix before every commit, you can add the following to your `package.json`:
+
+```json
+{
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
+```
+
+and then
+
+```bash
+npm i -D lint-staged simple-git-hooks
+```
+
+## FAQ
+
+### Prettier?
+
+[Why I don't use Prettier](https://fazulk.me/posts/why-not-prettier)
+
+### How to lint CSS?
+
+This config does NOT lint CSS. I personally use [UnoCSS](https://github.com/unocss/unocss) so I don't write CSS. If you still prefer CSS, you can use [stylelint](https://stylelint.io/) for CSS linting.
+
+### I prefer XXX...
+
+Sure, you can override the rules in your `.eslintrc` file.
+
+<!-- eslint-skip -->
+
+```jsonc
+{
+  "extends": "@fazulk",
+  "rules": {
+    // your rules...
+  }
+}
+```
+
+Or you can always fork this repo and make your own.
 
 ## Check Also
 
-- [antfu/dotfiles](https://github.com/antfu/dotfiles) - My dotfiles
-- [antfu/vscode-settings](https://github.com/antfu/vscode-settings) - My VS Code settings
-- [antfu/ts-starter](https://github.com/antfu/ts-starter) - My starter template for TypeScript library
-- [antfu/vitesse](https://github.com/antfu/vitesse) - My starter template for Vue & Vite app
+- [fazulk/dotfiles](https://github.com/fazulk/dotfiles) - My dotfiles
+- [fazulk/vscode-settings](https://github.com/fazulk/vscode-settings) - My VS Code settings
+- [fazulk/ts-starter](https://github.com/fazulk/ts-starter) - My starter template for TypeScript library
+- [fazulk/vitesse](https://github.com/fazulk/vitesse) - My starter template for Vue & Vite app
 
 ## License
 
-[MIT](./LICENSE) License &copy; 2019-PRESENT [Anthony Fu](https://github.com/antfu)
+[MIT](./LICENSE) License &copy; 2019-PRESENT [Anthony Fu](https://github.com/fazulk)
