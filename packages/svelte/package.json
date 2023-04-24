@@ -1,6 +1,6 @@
 {
   "name": "@fazulk/eslint-config-svelte",
-  "version": "0.39.0",
+  "version": "0.39.1",
   "description": "",
   "author": "Jeff Fasulkey (https://github.com/fazulk/)",
   "license": "MIT",
