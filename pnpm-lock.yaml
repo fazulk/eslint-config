@@ -22,18 +22,32 @@ importers:
       '@typescript-eslint/eslint-plugin': ^5.59.0
       '@typescript-eslint/parser': ^5.59.0
       eslint: ^8.33.0
+      eslint-plugin-no-autofix: ^1.2.3
       eslint-plugin-svelte: ^2.16.0
     dependencies:
       '@antfu/eslint-config': 0.38.5_eslint@8.39.0
       '@typescript-eslint/eslint-plugin': 5.59.1_ioueirodvy7bgrv7vv2ygh4y4a
       '@typescript-eslint/parser': 5.59.1_eslint@8.39.0
+      eslint-plugin-no-autofix: 1.2.3_eslint@8.39.0
       eslint-plugin-svelte: 2.26.0_eslint@8.39.0
+    devDependencies:
+      eslint: 8.39.0
+
+  packages/vue:
+    specifiers:
+      eslint: ^8.33.0
+      eslint-plugin-no-autofix: ^1.2.3
+    dependencies:
+      eslint-plugin-no-autofix: 1.2.3_eslint@8.39.0
     devDependencies:
       eslint: 8.39.0
 
   packages/vue2:
     specifiers:
       eslint: ^8.33.0
+      eslint-plugin-no-autofix: ^1.2.3
+    dependencies:
+      eslint-plugin-no-autofix: 1.2.3_eslint@8.39.0
     devDependencies:
       eslint: 8.39.0
 
@@ -1230,6 +1244,17 @@ packages:
       minimatch: 3.1.2
       resolve: 1.22.2
       semver: 7.5.0
+
+  /eslint-plugin-no-autofix/1.2.3_eslint@8.39.0:
+    resolution: {integrity: sha512-JFSYe82Da2A8Krh+Gfq7+3X2pchTScKgmrlMKIA4HmV6t5xGBF/kgjiFL3YTWRQXQ0NB9eOqpcxh6SuLtQUFjQ==}
+    engines: {node: '>=8'}
+    peerDependencies:
+      eslint: '>= 5.12.1'
+    dependencies:
+      eslint: 8.39.0
+      eslint-rule-composer: 0.3.0
+      find-up: 5.0.0
+    dev: false
 
   /eslint-plugin-no-only-tests/3.1.0:
     resolution: {integrity: sha512-Lf4YW/bL6Un1R6A76pRZyE1dl1vr31G/ev8UzIc/geCgFWyrKil8hVjYqWVKGB/UIGmb6Slzs9T0wNezdSVegw==}
