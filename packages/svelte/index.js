@@ -24,7 +24,7 @@ module.exports = {
   ],
   extends: [
     'plugin:svelte/recommended',
-    '@fazulk',
+    '@antfu',
   ],
   rules: {
     'svelte/indent': [

@@ -18,9 +18,7 @@ importers:
 
   packages/eslint-config:
     specifiers:
-      '@fazulk/eslint-config-svelte': workspace:*
       '@fazulk/eslint-config-vue': workspace:*
-      '@fazulk/eslint-config-vue2': workspace:*
       '@typescript-eslint/eslint-plugin': ^5.59.0
       '@typescript-eslint/parser': ^5.59.0
       eslint: ^8.38.0
@@ -37,9 +35,7 @@ importers:
       jsonc-eslint-parser: ^2.2.0
       yaml-eslint-parser: ^1.2.0
     dependencies:
-      '@fazulk/eslint-config-svelte': link:../svelte
       '@fazulk/eslint-config-vue': link:../vue
-      '@fazulk/eslint-config-vue2': link:../vue2
       '@typescript-eslint/eslint-plugin': 5.59.1_ioueirodvy7bgrv7vv2ygh4y4a
       '@typescript-eslint/parser': 5.59.1_eslint@8.39.0
       eslint-plugin-eslint-comments: 3.2.0_eslint@8.39.0
@@ -73,15 +69,6 @@ importers:
       eslint: 8.39.0
 
   packages/vue:
-    specifiers:
-      eslint: ^8.33.0
-      eslint-plugin-no-autofix: ^1.2.3
-    dependencies:
-      eslint-plugin-no-autofix: 1.2.3_eslint@8.39.0
-    devDependencies:
-      eslint: 8.39.0
-
-  packages/vue2:
     specifiers:
       eslint: ^8.33.0
       eslint-plugin-no-autofix: ^1.2.3
